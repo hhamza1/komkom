@@ -4,7 +4,8 @@
   "description": "Kom&Kom Agency website",
   "main": "index.js",
   "scripts": {
-    "sass" : "node-sass -w assets/sass/main.scss -o assets/css"
+    "sass" : "node-sass -w assets/sass/main.scss -o assets/css",
+    "build" : "node-sass assets/sass/main.scss -o assets/css"
   },
   "author": "Hamza HM.",
   "license": "ISC",
