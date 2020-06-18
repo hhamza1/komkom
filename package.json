@@ -1,0 +1,14 @@
+{
+  "name": "komkom",
+  "version": "1.0.0",
+  "description": "Kom&Kom Agency website",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "node-sass -w assets/sass/main.scss -o assets/css"
+  },
+  "author": "Hamza HM.",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
