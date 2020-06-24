@@ -1410,6 +1410,8 @@ ul.actions {
         width: 100%; }
     ul.actions.fit.stacked {
       width: 100%; }
+  ul.actions + .center {
+    justify-content: center; }
 
 /* Icons */
 ul.icons {
