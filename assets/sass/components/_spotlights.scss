@@ -70,6 +70,12 @@
 			}
 		}
 
+		.tags {
+			color: _palette(accent3);
+			font-style: italic;
+			
+		}
+
 		@include breakpoint('<=xlarge') {
 			> section {
 				> .image {
