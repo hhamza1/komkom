@@ -58,6 +58,7 @@
 					max-width: 100%;
 					width: _size(inner);
 				}
+
 			}
 
 			&:nth-child(2n) {
@@ -68,6 +69,12 @@
 					@include vendor('align-items', 'flex-end');
 				}
 			}
+		}
+
+		.tags {
+			color: _palette(accent3);
+			font-style: italic;
+			
 		}
 
 		@include breakpoint('<=xlarge') {
