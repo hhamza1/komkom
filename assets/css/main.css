@@ -1925,7 +1925,8 @@ button,
 .cards {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  box-sizing: border-box; }
   .cards .service-card {
     cursor: pointer;
     width: 570px;
@@ -1949,12 +1950,16 @@ button,
         top: 20px;
         left: 20px; }
         .cards .service-card .front .service-info .service-text {
-          padding-top: 30px; }
+          padding-top: 30px;
+          padding-left: 3px;
+          padding-right: 3px; }
+          .cards .service-card .front .service-info .service-text h3 {
+            margin: 0; }
+          .cards .service-card .front .service-info .service-text p {
+            font-size: 16px; }
         .cards .service-card .front .service-info i {
           font-size: 50px;
           transition: transform .3s ease-in-out; }
-        .cards .service-card .front .service-info i:hover {
-          transform: scale(1.2); }
   .cards .bg1 {
     background-color: #623293; }
   .cards .bg2 {
@@ -1967,6 +1972,8 @@ button,
     background: #F04E37; }
     .cards .service-card:hover img {
       opacity: .1; }
+    .cards .service-card:hover i {
+      transform: scale(1.2); }
 
 /* Header */
 @-moz-keyframes reveal-header {

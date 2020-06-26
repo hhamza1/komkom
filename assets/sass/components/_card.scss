@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    box-sizing: border-box;
 
     .service-card {
         cursor: pointer;
@@ -32,6 +33,17 @@
 
                 .service-text {
                     padding-top: 30px;
+                    padding-left: 3px;
+                    padding-right: 3px;
+                    
+                    
+                    h3 {
+                        margin: 0;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
                 }
 
                 i {
@@ -39,9 +51,6 @@
                     transition: transform .3s ease-in-out;
                 }
 
-                i:hover{
-                    transform: scale(1.2);
-                }
             }
         }
 
@@ -70,6 +79,9 @@
             opacity: .1;
         }
 
+        i {
+            transform: scale(1.2);
+        }
     }
     
 }
