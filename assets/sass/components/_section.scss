@@ -49,6 +49,10 @@
 					}
 				}
 			}
+
+			.subtitle {
+				color: _palette(accent3);
+			}
 		}
 
 		@include breakpoint('<=small') {
