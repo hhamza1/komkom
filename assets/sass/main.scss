@@ -37,7 +37,50 @@
 				@include padding(3em, 0);
 				width: calc(100% - 3em);
 			}
+
+
+			.custom-carousel {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.slider {
+					border-radius: 5px;
+					width: 100%;
+					height: 100px;
+					position: relative;
+					background: #fff;
+					display: flex;
+					overflow: hidden;
+					box-shadow: 10px 10px 20px -10px rgba(#fff, 0.8);
+
+
+					.img-area {
+						height: 100px;
+						display: flex;
+						align-items: center;
+						animation: slideshow 20s linear infinite;
+
+
+						img {
+							height: 70px;
+							padding: 0 30px 0 30px;
+							transition: transform .3s ease-in-out;
+						}
+
+						img:hover {
+							transform: scale(1.2);
+						}
+					}
+				}
+
+			}
 		}
+	}
+
+	@keyframes slideshow {
+		0% {transform: translateX(0);}
+		100% {transform: translateX(-100%);}
 	}
 
 // Base.
