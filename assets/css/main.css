@@ -5,6 +5,10 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+@media only screen and (max-width: 540px) {
+  .use-cases .use-case {
+    grid-template-columns: repeat(1, 1fr); } }
+
 @keyframes slideshow {
   0% {
     transform: translateX(0); }
@@ -2391,6 +2395,39 @@ button,
         #main > * > .inner .custom-carousel .slider::after {
           right: 0;
           transform: rotateZ(180deg); }
+      #main > * > .inner .use-cases {
+        display: grid;
+        overflow: hidden; }
+        #main > * > .inner .use-cases .major {
+          margin-bottom: 0; }
+        #main > * > .inner .use-cases .use-case {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 20px;
+          margin-bottom: 30px; }
+          #main > * > .inner .use-cases .use-case .block {
+            width: 400px;
+            height: 200px;
+            overflow: hidden; }
+            #main > * > .inner .use-cases .use-case .block img {
+              filter: grayscale(100%);
+              -webkit-filter: grayscale(100%);
+              width: 100%;
+              height: 100%;
+              transition: all 1.2s;
+              cursor: pointer; }
+            #main > * > .inner .use-cases .use-case .block .blackLayer {
+              width: 400px;
+              height: 200px;
+              background-color: rgba(0, 0, 0, 0.3);
+              pointer-events: none;
+              transition: all 1s; }
+          #main > * > .inner .use-cases .use-case .block:hover img {
+            transform: scale(1.5) rotate(5deg);
+            filter: none;
+            -webkit-filter: none; }
+          #main > * > .inner .use-cases .use-case .block:hover .blackLayer {
+            transform: translateY(-410px); }
   #main.alt {
     background-color: transparent;
     border-bottom: solid 1px rgba(212, 212, 255, 0.1); }
@@ -2527,6 +2564,39 @@ button,
       #wrapper > * > .inner .custom-carousel .slider::after {
         right: 0;
         transform: rotateZ(180deg); }
+    #wrapper > * > .inner .use-cases {
+      display: grid;
+      overflow: hidden; }
+      #wrapper > * > .inner .use-cases .major {
+        margin-bottom: 0; }
+      #wrapper > * > .inner .use-cases .use-case {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        margin-bottom: 30px; }
+        #wrapper > * > .inner .use-cases .use-case .block {
+          width: 400px;
+          height: 200px;
+          overflow: hidden; }
+          #wrapper > * > .inner .use-cases .use-case .block img {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            width: 100%;
+            height: 100%;
+            transition: all 1.2s;
+            cursor: pointer; }
+          #wrapper > * > .inner .use-cases .use-case .block .blackLayer {
+            width: 400px;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.3);
+            pointer-events: none;
+            transition: all 1s; }
+        #wrapper > * > .inner .use-cases .use-case .block:hover img {
+          transform: scale(1.5) rotate(5deg);
+          filter: none;
+          -webkit-filter: none; }
+        #wrapper > * > .inner .use-cases .use-case .block:hover .blackLayer {
+          transform: translateY(-410px); }
   @media screen and (max-width: 736px) {
     #wrapper {
       padding-top: 2.75em; } }
