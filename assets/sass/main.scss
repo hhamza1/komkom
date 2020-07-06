@@ -175,15 +175,17 @@
 				grid-gap: 20px;
 				justify-content: center;
 				margin-top: 50px;
+				
 
 				.service{
 					width: 90vw;
 					height: 150px;
-					background-color:_palette(highlight);
+					background-color:rgba(_palette(highlight), .3);
 					border-radius: 5px;
 					cursor: pointer;
 					position: relative;
 					transition: background-color .3s ease-in-out;
+					padding: 5px;
 
 					header {
 						h1 {
@@ -218,7 +220,7 @@
 						width: 100%;
 						height: 100%;
 						border-radius: 5px;
-						opacity: .1;
+						opacity: .5;
 						transition: opacity .3s ease-in-out;
 
 						
@@ -256,15 +258,6 @@
 			}
 
 			
-		}
-	}
-
-
-	@media only screen and (max-width: 540px) {
-		.use-cases {
-			.use-case {
-				grid-template-columns: repeat(1, 1fr);
-			}
 		}
 	}
 
