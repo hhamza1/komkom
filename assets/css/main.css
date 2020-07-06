@@ -117,12 +117,13 @@ a {
   -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  border-bottom: dotted 1px;
   color: inherit;
   text-decoration: none; }
   a:hover {
     border-bottom-color: transparent;
     color: #f04e36 !important; }
+    a:hover p {
+      color: #fff; }
   a:active {
     color: #c52b15 !important; }
 
@@ -1965,7 +1966,8 @@ button,
             font-size: 16px; }
         .cards .service-card .front .service-info i {
           font-size: 50px;
-          transition: transform .3s ease-in-out; }
+          transition: transform .3s ease-in-out;
+          color: #fff; }
   .cards .bg1 {
     background-color: #623293; }
   .cards .bg2 {
