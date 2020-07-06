@@ -140,8 +140,51 @@
 						transform: translateY(-410px);
 					}
 				}
+
+
+				@media (max-width: 700px) {
+					.use-case {
+						display: grid;
+						grid-template-columns: repeat(1, 1fr);
+
+					}
+				}
+			}
+			.container {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				max-width: 1100px;
+				margin: 0 auto;
+				overflow: auto;
+
+				h2 {
+					margin-top: 0;
+				}
+
+				span {
+					font-size: 1.5rem;
+					font-weight: 600;
+
+				}
+
+				.label {
+					color: _palette(highlight);
+				}
+
+				
 			}
 
+			@media(max-width:700px){
+				.container{
+					display: flex;
+					flex-direction: column;
+					justify-content: start;
+				}
+			}
+
+			
 		}
 	}
 
