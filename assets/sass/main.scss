@@ -183,6 +183,7 @@
 					border-radius: 5px;
 					cursor: pointer;
 					position: relative;
+					transition: background-color .3s ease-in-out;
 
 					header {
 						h1 {
@@ -226,6 +227,8 @@
 				}
 
 				.service:hover{
+					background-color: rgba(_palette(highlight), .9);
+
 					header {
 						h1 {
 							opacity: .8;
@@ -235,7 +238,7 @@
 						}
 					}
 					img {
-						opacity: .5;
+						opacity: .7;
 					}
 
 					header::before {

@@ -2456,7 +2456,8 @@ button,
           background-color: #f04e36;
           border-radius: 5px;
           cursor: pointer;
-          position: relative; }
+          position: relative;
+          transition: background-color .3s ease-in-out; }
           #main > * > .inner .services-container .service header h1 {
             font-size: 35px;
             font-weight: 700;
@@ -2482,14 +2483,16 @@ button,
             border-radius: 5px;
             opacity: .1;
             transition: opacity .3s ease-in-out; }
-        #main > * > .inner .services-container .service:hover header h1 {
-          opacity: .8; }
-        #main > * > .inner .services-container .service:hover header h3 {
-          opacity: .8; }
-        #main > * > .inner .services-container .service:hover img {
-          opacity: .5; }
-        #main > * > .inner .services-container .service:hover header::before {
-          opacity: .8; }
+        #main > * > .inner .services-container .service:hover {
+          background-color: rgba(240, 78, 54, 0.9); }
+          #main > * > .inner .services-container .service:hover header h1 {
+            opacity: .8; }
+          #main > * > .inner .services-container .service:hover header h3 {
+            opacity: .8; }
+          #main > * > .inner .services-container .service:hover img {
+            opacity: .7; }
+          #main > * > .inner .services-container .service:hover header::before {
+            opacity: .8; }
       @media screen and (max-width: 736px) {
         #main > * > .inner .container {
           display: flex;
@@ -2695,7 +2698,8 @@ button,
         background-color: #f04e36;
         border-radius: 5px;
         cursor: pointer;
-        position: relative; }
+        position: relative;
+        transition: background-color .3s ease-in-out; }
         #wrapper > * > .inner .services-container .service header h1 {
           font-size: 35px;
           font-weight: 700;
@@ -2721,14 +2725,16 @@ button,
           border-radius: 5px;
           opacity: .1;
           transition: opacity .3s ease-in-out; }
-      #wrapper > * > .inner .services-container .service:hover header h1 {
-        opacity: .8; }
-      #wrapper > * > .inner .services-container .service:hover header h3 {
-        opacity: .8; }
-      #wrapper > * > .inner .services-container .service:hover img {
-        opacity: .5; }
-      #wrapper > * > .inner .services-container .service:hover header::before {
-        opacity: .8; }
+      #wrapper > * > .inner .services-container .service:hover {
+        background-color: rgba(240, 78, 54, 0.9); }
+        #wrapper > * > .inner .services-container .service:hover header h1 {
+          opacity: .8; }
+        #wrapper > * > .inner .services-container .service:hover header h3 {
+          opacity: .8; }
+        #wrapper > * > .inner .services-container .service:hover img {
+          opacity: .7; }
+        #wrapper > * > .inner .services-container .service:hover header::before {
+          opacity: .8; }
     @media screen and (max-width: 736px) {
       #wrapper > * > .inner .container {
         display: flex;
