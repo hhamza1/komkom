@@ -37,7 +37,126 @@
 				@include padding(3em, 0);
 				width: calc(100% - 3em);
 			}
+
+
+			.custom-carousel {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.slider {
+					border-radius: 5px;
+					width: 100%;
+					height: 100px;
+					position: relative;
+					background: #fff;
+					display: flex;
+					overflow: hidden;
+					box-shadow: 10px 10px 20px -10px rgba(#fff, 0.8);
+
+					.img-area {
+						height: 100px;
+						display: flex;
+						align-items: center;
+						animation: slideshow 20s linear infinite;
+
+						img {
+							height: 70px;
+							padding: 0 30px 0 30px;
+							transition: transform .3s ease-in-out;
+						}
+
+						img:hover {
+							transform: scale(1.3);
+						}
+					}
+				}
+
+				.slider::before, .slider::after {
+					height: 100px;
+					width: 200px;
+					position: absolute;
+					content : "";
+					background: linear-gradient(to right, #fff 0%, rgba(#000, 0) 100%);
+					z-index: 2;
+				}
+
+				.slider::before {
+					left: 0;
+					top: 0;
+				}
+				.slider::after {
+					right: 0;
+					transform: rotateZ(180deg);
+				}
+
+			}
+
+
+
+			.use-cases {
+				display: grid;
+				overflow: hidden;
+
+				.major {
+					margin-bottom: 0;
+				}
+				.use-case {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+					grid-gap: 20px;
+					margin-bottom: 30px;
+					.block {
+						width: 400px;
+						height: 200px;
+						overflow: hidden;
+	
+	
+						img {
+							filter: grayscale(100%);
+							-webkit-filter: grayscale(100%);
+							width: 100%;
+							height: 100%;
+							transition: all 1.2s;
+							cursor: pointer;
+						}
+	
+						.blackLayer {
+							width: 400px;
+							height: 200px;
+							background-color:rgba(#000, .3s);
+							pointer-events: none;
+							transition: all 1s;
+						}
+					}
+	
+					.block:hover img {
+						transform: scale(1.5) rotate(5deg);
+						filter: none;
+						-webkit-filter: none;
+					}
+	
+					.block:hover .blackLayer {
+						transform: translateY(-410px);
+					}
+				}
+			}
+
 		}
+	}
+
+
+	@media only screen and (max-width: 540px) {
+		.use-cases {
+			.use-case {
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
+	}
+
+	@keyframes slideshow {
+		0% {transform: translateX(0);}
+		100% {transform: translateX(-100%);}
 	}
 
 // Base.
