@@ -2470,8 +2470,7 @@ button,
             opacity: .5;
             transition: all .3s ease-in-out; }
         #main > * > .inner .collapse label:hover h1, #main > * > .inner .collapse label:hover h3 {
-          background: rgba(0, 0, 0, 0.05);
-          padding: 5px; }
+          background: rgba(0, 0, 0, 0.05); }
         #main > * > .inner .collapse label:hover img {
           opacity: .9;
           transform: scale(1.1); }
@@ -2720,8 +2719,7 @@ button,
           opacity: .5;
           transition: all .3s ease-in-out; }
       #wrapper > * > .inner .collapse label:hover h1, #wrapper > * > .inner .collapse label:hover h3 {
-        background: rgba(0, 0, 0, 0.05);
-        padding: 5px; }
+        background: rgba(0, 0, 0, 0.05); }
       #wrapper > * > .inner .collapse label:hover img {
         opacity: .9;
         transform: scale(1.1); }
