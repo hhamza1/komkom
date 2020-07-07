@@ -1976,6 +1976,69 @@ button,
     .cards .service-card:hover i {
       transform: scale(1.2); }
 
+.collapse {
+  max-width: 90vw;
+  overflow: hidden; }
+  .collapse div {
+    background: #f04e36;
+    margin-bottom: 30px;
+    border-radius: 5px; }
+  .collapse label {
+    margin: 0;
+    position: relative;
+    box-sizing: border-box; }
+    .collapse label .details {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      background: transparent;
+      letter-spacing: 0;
+      font-weight: 700;
+      padding-right: 30px; }
+      .collapse label .details h1 {
+        font-size: 40px;
+        margin-bottom: 0; }
+      .collapse label .details h1, .collapse label .details h3 {
+        transition: all .3s ease-in-out; }
+    .collapse label img {
+      width: 100%;
+      height: 200px;
+      padding: 0 5px;
+      padding-top: 7px;
+      border-radius: 10px;
+      opacity: .5;
+      transition: all .3s ease-in-out; }
+  .collapse label:hover h1, .collapse label:hover h3 {
+    background: rgba(0, 0, 0, 0.05); }
+  .collapse label:hover img {
+    opacity: .9;
+    transform: scale(1.1); }
+
+.collapse__content {
+  padding: 14px 20px; }
+
+.collapse__label {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  transition: background .4s; }
+
+.collapse__label:hover {
+  background: rgba(0, 0, 0, 0.1); }
+
+.collapse__content {
+  background: #fff;
+  color: #000;
+  display: none; }
+
+.collapse__input {
+  display: none !important; }
+
+.collapse__input:checked ~ .collapse__content {
+  display: block; }
+
 /* Header */
 @-moz-keyframes reveal-header {
   0% {
@@ -2437,62 +2500,6 @@ button,
           font-weight: 600; }
         #main > * > .inner .container .label {
           color: #f04e36; }
-      #main > * > .inner .collapse {
-        max-width: 90vw;
-        overflow: hidden; }
-        #main > * > .inner .collapse div {
-          background: #f04e36;
-          margin-bottom: 30px;
-          border-radius: 5px; }
-        #main > * > .inner .collapse label {
-          margin: 0;
-          position: relative;
-          box-sizing: border-box; }
-          #main > * > .inner .collapse label .details {
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            background: transparent;
-            letter-spacing: 0;
-            font-weight: 700;
-            padding-right: 30px; }
-            #main > * > .inner .collapse label .details h1 {
-              font-size: 40px;
-              margin-bottom: 0; }
-            #main > * > .inner .collapse label .details h1, #main > * > .inner .collapse label .details h3 {
-              transition: all .3s ease-in-out; }
-          #main > * > .inner .collapse label img {
-            width: 100%;
-            height: 200px;
-            padding: 0 5px;
-            padding-top: 7px;
-            border-radius: 10px;
-            opacity: .5;
-            transition: all .3s ease-in-out; }
-        #main > * > .inner .collapse label:hover h1, #main > * > .inner .collapse label:hover h3 {
-          background: rgba(0, 0, 0, 0.05); }
-        #main > * > .inner .collapse label:hover img {
-          opacity: .9;
-          transform: scale(1.1); }
-      #main > * > .inner .collapse__content {
-        padding: 14px 20px; }
-      #main > * > .inner .collapse__label {
-        display: block;
-        color: #fff;
-        font-weight: 700;
-        cursor: pointer;
-        position: relative;
-        transition: background .4s; }
-      #main > * > .inner .collapse__label:hover {
-        background: rgba(0, 0, 0, 0.1); }
-      #main > * > .inner .collapse__content {
-        background: #fff;
-        color: #000;
-        display: none; }
-      #main > * > .inner .collapse__input {
-        display: none !important; }
-      #main > * > .inner .collapse__input:checked ~ .collapse__content {
-        display: block; }
       @media screen and (max-width: 736px) {
         #main > * > .inner .container {
           display: flex;
@@ -2686,62 +2693,6 @@ button,
         font-weight: 600; }
       #wrapper > * > .inner .container .label {
         color: #f04e36; }
-    #wrapper > * > .inner .collapse {
-      max-width: 90vw;
-      overflow: hidden; }
-      #wrapper > * > .inner .collapse div {
-        background: #f04e36;
-        margin-bottom: 30px;
-        border-radius: 5px; }
-      #wrapper > * > .inner .collapse label {
-        margin: 0;
-        position: relative;
-        box-sizing: border-box; }
-        #wrapper > * > .inner .collapse label .details {
-          position: absolute;
-          top: 10px;
-          left: 20px;
-          background: transparent;
-          letter-spacing: 0;
-          font-weight: 700;
-          padding-right: 30px; }
-          #wrapper > * > .inner .collapse label .details h1 {
-            font-size: 40px;
-            margin-bottom: 0; }
-          #wrapper > * > .inner .collapse label .details h1, #wrapper > * > .inner .collapse label .details h3 {
-            transition: all .3s ease-in-out; }
-        #wrapper > * > .inner .collapse label img {
-          width: 100%;
-          height: 200px;
-          padding: 0 5px;
-          padding-top: 7px;
-          border-radius: 10px;
-          opacity: .5;
-          transition: all .3s ease-in-out; }
-      #wrapper > * > .inner .collapse label:hover h1, #wrapper > * > .inner .collapse label:hover h3 {
-        background: rgba(0, 0, 0, 0.05); }
-      #wrapper > * > .inner .collapse label:hover img {
-        opacity: .9;
-        transform: scale(1.1); }
-    #wrapper > * > .inner .collapse__content {
-      padding: 14px 20px; }
-    #wrapper > * > .inner .collapse__label {
-      display: block;
-      color: #fff;
-      font-weight: 700;
-      cursor: pointer;
-      position: relative;
-      transition: background .4s; }
-    #wrapper > * > .inner .collapse__label:hover {
-      background: rgba(0, 0, 0, 0.1); }
-    #wrapper > * > .inner .collapse__content {
-      background: #fff;
-      color: #000;
-      display: none; }
-    #wrapper > * > .inner .collapse__input {
-      display: none !important; }
-    #wrapper > * > .inner .collapse__input:checked ~ .collapse__content {
-      display: block; }
     @media screen and (max-width: 736px) {
       #wrapper > * > .inner .container {
         display: flex;
