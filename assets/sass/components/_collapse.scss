@@ -82,9 +82,9 @@
 }
 
 .collapse__content {
-    
     color: #000;
     display: none;
+    
 }
 
 .collapse__input{
@@ -93,6 +93,17 @@
 }
 
 .collapse__input:checked ~ .collapse__content {
-    display: block;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@include breakpoint('<=small'){
+    .collapse__input:checked ~ .collapse__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 }

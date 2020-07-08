@@ -2036,7 +2036,17 @@ button,
   display: none !important; }
 
 .collapse__input:checked ~ .collapse__content {
-  display: block; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+@media screen and (max-width: 736px) {
+  .collapse__input:checked ~ .collapse__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; } }
 
 .flipcard-container {
   position: relative;
@@ -2105,6 +2115,10 @@ button,
     font-weight: 600;
     padding: 30px 0;
     line-height: 1.8; }
+
+@media screen and (max-width: 736px) {
+  .flipcard-container {
+    margin: 20px 0; } }
 
 /* Header */
 @-moz-keyframes reveal-header {
