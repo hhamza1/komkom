@@ -64,7 +64,7 @@
 }
 
 .collapse__content {
-    padding: 14px 20px;
+    padding: 50px 20px;
     
 }
 
@@ -82,6 +82,7 @@
 }
 
 .collapse__content {
+    background : _palette(bg-alt);
     color: #000;
     display: none;
     
