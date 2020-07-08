@@ -1979,7 +1979,7 @@ button,
 .collapse {
   max-width: 90vw;
   overflow: hidden; }
-  .collapse div {
+  .collapse .collapse-div {
     background: #f04e36;
     margin-bottom: 30px;
     border-radius: 5px; }
@@ -2029,7 +2029,6 @@ button,
   background: rgba(0, 0, 0, 0.1); }
 
 .collapse__content {
-  background: #fff;
   color: #000;
   display: none; }
 
@@ -2038,6 +2037,74 @@ button,
 
 .collapse__input:checked ~ .collapse__content {
   display: block; }
+
+.flipcard-container {
+  position: relative;
+  width: 270px;
+  height: 370px; }
+
+.flipcard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all .5s ease; }
+
+.flipcard:hover {
+  transform: rotateY(180deg); }
+
+.flipcard-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #f04e36;
+  color: #333;
+  border-radius: 10px;
+  overflow: hidden; }
+  .flipcard-front img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(10%);
+    opacity: .7;
+    object-fit: cover; }
+  .flipcard-front .flipcard-front-info {
+    position: absolute;
+    top: 100px; }
+    .flipcard-front .flipcard-front-info header {
+      background-color: #333, 0.5; }
+    .flipcard-front .flipcard-front-info header > h1 {
+      text-align: center;
+      font-size: 50px; }
+
+.flipcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #efb261;
+  color: #333;
+  transform: rotateY(180deg);
+  border-radius: 10px; }
+  .flipcard-back .title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; }
+  .flipcard-back .title > h4 {
+    margin: 0; }
+  .flipcard-back .category {
+    color: #f04e36;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 10px;
+    padding-top: 10px; }
+  .flipcard-back .text {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 30px 0;
+    line-height: 1.8; }
 
 /* Header */
 @-moz-keyframes reveal-header {

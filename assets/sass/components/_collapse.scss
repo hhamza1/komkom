@@ -2,7 +2,7 @@
     max-width: 90vw;
     overflow: hidden;
 
-    div{
+    .collapse-div{
         background: _palette(highlight);
         margin-bottom: 30px;
         border-radius: 5px;
@@ -65,6 +65,7 @@
 
 .collapse__content {
     padding: 14px 20px;
+    
 }
 
 .collapse__label {
@@ -81,7 +82,7 @@
 }
 
 .collapse__content {
-    background: #fff;
+    
     color: #000;
     display: none;
 }
